@@ -23,6 +23,7 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
+          automatic_release_tag: latest
           files: |
             bin/Release/net48/iot-link-incognito-addon.dll
             addon.yaml
