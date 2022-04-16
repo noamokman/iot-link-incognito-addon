@@ -3,22 +3,21 @@ name: publish
 on:
   push:
     paths:
-      - 'src/**'
-      - 'addon.yaml'
-      - 'config.yaml'
-      - 'iot-link-incognito-addon.csproj'
-    branches: [ main ]
+      - "src/**"
+      - "addon.yaml"
+      - "config.yaml"
+      - "iot-link-incognito-addon.csproj"
+    branches: [main]
   workflow_dispatch:
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-    steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-dotnet@v2
         with:
-          dotnet-version: '6'
+          dotnet-version: "6"
       - run: dotnet build --configuration Release
       - uses: actions/upload-artifact@v3
         with:
