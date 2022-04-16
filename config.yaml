@@ -1,1 +1,4 @@
 enabled: true
+interval: 5000
+topic: incognito
+cacheTTL: 30000
