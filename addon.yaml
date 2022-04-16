@@ -1,0 +1,9 @@
+########################################################################
+# Addon Information
+########################################################################
+enabled: true
+id: Incognito
+name: Incognito
+file: iot-link-incognito-addon.dll
+minApiVersion: 2.2.0
+maxApiVersion: 
